@@ -5,6 +5,8 @@ namespace Cadastro_Membros_IPCS.Models
 {
     public class Membro
     {
+        [Key]
+        [Required]
         public int Id { get; set; }
 
         [Required(ErrorMessage = "É necessário dizer o nome do membro.")]
