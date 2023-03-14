@@ -3,7 +3,7 @@ using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
 
-var connectionString = builder.Configuration.GetConnectionString("FilmeConnection");
+var connectionString = builder.Configuration.GetConnectionString("MembroConnection");
 
 builder.Services.AddDbContext<MembroContext>(opts => opts.UseSqlServer(connectionString));
 
